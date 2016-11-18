@@ -4,8 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "server-ui": "gulp connect-ui",
-    "server-editor": "gulp connect-editor",
+    "swagger-ui": "gulp swagger-ui",
+    "swagger-editor": "gulp swagger-editor",
     "json-server": "json-server -c json-server/json-server.json json-server/db.js"
   },
   "author": "",

@@ -9,10 +9,10 @@
 npm install
 
 # run server for swagger-ui
-npm run server-ui
+npm run swagger-ui
 
 # run server for swagger-editor
-npm run server-editor
+npm run swagger-editor
 
 # run json-server for mock data
 npm run json-server

@@ -11,7 +11,7 @@ gulp.task('watch', function () {
      gulp.watch('swagger-ui/*.json', ['reload']);
  });
 
-gulp.task('connect-ui', ['watch', 'reload'], function() {
+gulp.task('swagger-ui', ['watch', 'reload'], function() {
   connect.server({
     root: 'swagger-ui',
     port: 8888,
@@ -29,7 +29,7 @@ gulp.task('connect-ui', ['watch', 'reload'], function() {
   });
 });
 
-gulp.task('connect-editor', function() {
+gulp.task('swagger-editor', function() {
   connect.server({
     root: 'swagger-editor',
     port: 8889
