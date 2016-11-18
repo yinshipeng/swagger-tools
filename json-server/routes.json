@@ -1,0 +1,5 @@
+{
+  "/api/": "/",
+  "/user/login": "/user",
+  "/user/:username/show": "/user?username=:username"
+}
