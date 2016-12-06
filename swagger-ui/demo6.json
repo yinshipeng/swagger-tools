@@ -1,0 +1,76 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "swagger-ui的汉化版本",
+    "version": "1.0.0",
+    "title": "汉化版Swagger-UI",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "yinshipeng@126.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:8888",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "login",
+      "description": "登陆"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/login": {
+      "post": {
+        "tags": [
+          "login"
+        ],
+        "summary": "登陆",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "firmNum",
+            "description": "企业号",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "username",
+            "description": "注册手机号",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "password",
+            "description": "登陆密码",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+
+  },
+  "externalDocs": {
+    "description": "了解一下我们吧！",
+    "url": "https://github.com/yinshipeng"
+  }
+}
